@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-xs-4 quote" v-for="(quote,index) in Quotes" :key="quote"
+            <div class="col-xs-5 quote" v-for="(quote,index) in Quotes" :key="quote"
             @click="deleteQuotes(index, quote)">
                 {{quote}}
             </div>
@@ -39,8 +39,9 @@ export default {
         border: 1px solid #cccccc;
         box-shadow: 1px 1px 2px black;
         padding: 30px;
-        margin: 30px auto;
-        font-size: 1.5em;
+        margin: 10px;
+        font-family: 'Arizonia', cursive;
+        font-size: 2.5em;
     }
     .quote:hover{
         background-color: #F08080;
